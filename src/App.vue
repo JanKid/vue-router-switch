@@ -41,7 +41,7 @@ body *,body *:before,body *:after{
   width: 100%;
   height: 100%;
   position: relative;
-  font-size: .32rem;
+  font-size: 16px;
 }
 .router-view {
   top:0.9rem;
