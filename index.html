@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>vue-rouer-switch</title>
+    <script>
+	    const doc = document
+			const win = window
+			const resizeEvt = 'orientationchange' in window ?
+			    'orientationchange' :
+			    'resize';
+    	function simpleRem() {
+			    var htmlEl = document.querySelector('html') || doc.documentElement,
+			        rem = htmlEl.offsetWidth / 7.5 //设计稿为750像素
+			    if (rem > 130) rem = 130
+			    htmlEl.style.fontSize = rem + 'px'
+			        // 使用后样式全部除以100
+			    win.addEventListener(resizeEvt, simpleRem, false);
+			    doc.addEventListener('DOMContentLoaded', simpleRem, false);
+			}
+			simpleRem();
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
